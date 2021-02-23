@@ -164,6 +164,7 @@ public class MainMenu implements Initializable {
         }
 //        appointmentTableView.getItems().clear();
         appointmentTableView.setItems(monthlyAppointments);
+        appointmentTableView.getSelectionModel().selectFirst();
 
         // If there are no monthly appointments show alert
         if (monthlyAppointments.isEmpty()) {
@@ -201,6 +202,7 @@ public class MainMenu implements Initializable {
         }
 
         appointmentTableView.setItems(weeklyAppointments);
+        appointmentTableView.getSelectionModel().selectFirst();
         // If there are no weekly appointments show alert
         if (weeklyAppointments.isEmpty()) {
             Alert noWeeklyAppointments = new Alert(Alert.AlertType.INFORMATION);

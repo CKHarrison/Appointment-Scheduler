@@ -1,2 +1,9 @@
 User 'admin' failed to log in on 2021-02-22T18:47:58.042236 America/Phoenix time
 User 'test' successfully logged in on 2021-02-22T18:48:01.138718 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T18:56:20.260774 America/Phoenix time
+User 'admin' failed to log in on 2021-02-22T19:02:22.4585 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T19:02:25.151238 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T19:04:53.528212 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T19:08:38.333572 America/Phoenix time
+User 'admin' failed to log in on 2021-02-22T19:09:52.228706 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T19:09:55.039052 America/Phoenix time

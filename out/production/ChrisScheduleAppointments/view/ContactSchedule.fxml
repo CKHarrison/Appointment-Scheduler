@@ -9,11 +9,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactSchedule">
+<AnchorPane prefHeight="600.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ContactSchedule">
    <children>
       <VBox prefHeight="600.0" prefWidth="1000.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1066.0">
                <children>
                   <VBox alignment="CENTER" prefHeight="96.0" prefWidth="333.0" spacing="10.0">
                      <children>
@@ -31,23 +31,24 @@
                   </VBox>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="413.0" prefWidth="1000.0">
+            <HBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="409.0" prefWidth="1100.0">
                <children>
-                  <TableView fx:id="contactTableView" prefHeight="413.0" prefWidth="951.0">
+                  <TableView fx:id="contactTableView" prefHeight="409.0" prefWidth="1026.0">
                     <columns>
                       <TableColumn fx:id="contactNameCol" prefWidth="104.0" text="Contact" />
-                        <TableColumn fx:id="appointmentCol" prefWidth="104.0" text="Appointment ID" />
-                      <TableColumn fx:id="titleCol" prefWidth="93.0" text="Title" />
-                        <TableColumn fx:id="descriptionCol" prefWidth="124.0" text="Description" />
-                        <TableColumn fx:id="dateCol" prefWidth="124.0" text="Appointment Date" />
-                        <TableColumn fx:id="startCol" prefWidth="124.0" text="Start Time" />
-                        <TableColumn fx:id="endCol" prefWidth="124.0" text="End Time" />
-                        <TableColumn fx:id="customerIDCol" prefWidth="153.0" text="Customer ID" />
+                        <TableColumn fx:id="appointmentCol" prefWidth="99.0" text="Appointment ID" />
+                      <TableColumn fx:id="titleCol" prefWidth="98.0" text="Title" />
+                        <TableColumn fx:id="typeCol" prefWidth="128.0" text="Type" />
+                        <TableColumn fx:id="descriptionCol" prefWidth="127.0" text="Description" />
+                        <TableColumn fx:id="dateCol" prefWidth="135.0" text="Appointment Date" />
+                        <TableColumn fx:id="startCol" prefWidth="107.0" text="Start Time" />
+                        <TableColumn fx:id="endCol" prefWidth="117.0" text="End Time" />
+                        <TableColumn fx:id="customerIDCol" prefWidth="128.0" text="Customer ID" />
                     </columns>
                   </TableView>
                </children>
             </HBox>
-            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="1053.0">
                <children>
                   <Button fx:id="viewReportsBtn" mnemonicParsing="false" onAction="#onActionViewReports" text="Back To Report View">
                      <font>

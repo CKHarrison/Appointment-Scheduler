@@ -238,9 +238,11 @@ public class MainMenu implements Initializable {
             // grab the selected appointment and display an alert warning the user about deleting an appointment
             Appointment appointmentToDelete = appointmentTableView.getSelectionModel().getSelectedItem();
             String appointmentTitle = appointmentToDelete.getTitle();
+            String appointmentType = appointmentToDelete.getType();
+            int appointmentID = appointmentToDelete.getAppointmentID();
             Alert deleteConfirmation = new Alert(Alert.AlertType.CONFIRMATION);
             deleteConfirmation.setTitle("Delete Confirmation");
-            deleteConfirmation.setContentText("Are you sure you want to delete " + appointmentToDelete.getTitle() + "?");
+            deleteConfirmation.setContentText("Are you sure you want to delete Appointment ID: " + appointmentID  + " type: " + appointmentType +  "?");
             Optional<ButtonType> result = deleteConfirmation.showAndWait();
             // if the user okay's the delete, delete the appointment from the database and update the table view
             if(result.isPresent() && result.get() == ButtonType.OK) {
@@ -248,7 +250,7 @@ public class MainMenu implements Initializable {
                 appointmentDAO.deleteAppointment(appointmentToDelete.getAppointmentID());
                 Alert appointmentCancellation = new Alert(Alert.AlertType.INFORMATION);
                 appointmentCancellation.setTitle("Appointment Cancelled");
-                String appointmentCancellationContext = "Appointment '" + appointmentTitle + "' was cancelled.";
+                String appointmentCancellationContext = "Appointment ID: " + appointmentID + " type: " + appointmentType + " was cancelled.";
                 appointmentCancellation.setContentText(appointmentCancellationContext);
                 allAppointments.remove(appointmentToDelete);
                 appointmentCancellation.showAndWait();

@@ -14,7 +14,7 @@
          <children>
             <HBox alignment="TOP_CENTER" prefHeight="124.0" prefWidth="475.0">
                <children>
-                  <Label text="Are You Sure You Want To Quit?">
+                  <Label text="Quit?">
                      <font>
                         <Font size="26.0" />
                      </font>

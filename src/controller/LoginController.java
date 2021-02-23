@@ -22,6 +22,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneId;
@@ -93,13 +94,16 @@ public class LoginController implements Initializable {
             for(Appointment appointment : allAppointments) {
                 LocalTime appointmentStartTime = appointment.getStartDateTime().toLocalTime();
                 Long timeDifference = ChronoUnit.MINUTES.between(currentTime, appointmentStartTime);
-                if(timeDifference > -1 && timeDifference <= 15) {
-                    appointmentFlag = true;
-                    apptID = appointment.getAppointmentID();
-                    apptDate = appointment.getStartDateFormatted();
-                    apptTime = appointment.getStartTimeFormatted();
-                    break;
-                }
+                //if the current day matches today and the time is within 15 minutes
+               if (appointment.getStartDateTime().toLocalDate().equals(LocalDate.now())) {
+                   if(timeDifference > -1 && timeDifference <= 15) {
+                       appointmentFlag = true;
+                       apptID = appointment.getAppointmentID();
+                       apptDate = appointment.getStartDateFormatted();
+                       apptTime = appointment.getStartTimeFormatted();
+                       break;
+                   }
+               }
 
             }
             // If there is an appointment set an alert with the appointment information, otherwise alert says no appointments

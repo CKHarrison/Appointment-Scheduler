@@ -35,6 +35,9 @@ public class ContactSchedule implements Initializable {
     private TableColumn<Appointment, String> titleCol;
 
     @FXML
+    private TableColumn<Appointment, String> typeCol;
+
+    @FXML
     private TableColumn<Appointment, String> descriptionCol;
 
     @FXML
@@ -106,6 +109,7 @@ public class ContactSchedule implements Initializable {
             contactNameCol.setCellValueFactory(new PropertyValueFactory<>("contactName"));
             appointmentCol.setCellValueFactory(new PropertyValueFactory<>("appointmentID"));
             titleCol.setCellValueFactory(new PropertyValueFactory<>("title"));
+            typeCol.setCellValueFactory(new PropertyValueFactory<>("type"));
             descriptionCol.setCellValueFactory(new PropertyValueFactory<>("description"));
             dateCol.setCellValueFactory(new PropertyValueFactory<>("startDateFormatted"));
             startCol.setCellValueFactory(new PropertyValueFactory<>("startTimeFormatted"));

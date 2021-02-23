@@ -7,9 +7,7 @@ JavaFX SDK 11.0.2
 MYSQL JDBC Connector 8.0.22
 
 To run the program:
-Click the run button and log in with either of the two username/password combinations.
-(admin/admin) or (test/test)
-Passwords are case sensitive.
+Click the run button and log in with the username: test password: test
 The Javadoc information can be found in the Javadoc directory in the root folder. Open it and click on index.html to see
 the documentation.
 

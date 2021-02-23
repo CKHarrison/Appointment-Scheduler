@@ -1,0 +1,2 @@
+User 'admin' failed to log in on 2021-02-22T18:47:58.042236 America/Phoenix time
+User 'test' successfully logged in on 2021-02-22T18:48:01.138718 America/Phoenix time

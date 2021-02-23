@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="270.0" prefWidth="475.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.QuitConfirmation">
+   <children>
+      <VBox prefHeight="270.0" prefWidth="475.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="124.0" prefWidth="475.0">
+               <children>
+                  <Label text="Are You Sure You Want To Quit?">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button fx:id="noButton" mnemonicParsing="false" onAction="#onActionNoButton" prefHeight="35.0" prefWidth="90.0" text="No">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="yesButton" layoutX="203.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionYesButton" prefHeight="35.0" prefWidth="90.0" text="Yes">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

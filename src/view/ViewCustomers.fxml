@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="500.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomers">
+   <children>
+      <VBox prefHeight="494.0" prefWidth="1000.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" text="Customer Information">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="15.0">
+               <children>
+                  <Button fx:id="addCustomerButton" mnemonicParsing="false" onAction="#onActionAddCustomer" text="Add Customer">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="modifyCustomerButton" layoutX="369.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionModifyCustomer" text="Modify Customer">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteCustomerButton" layoutX="425.0" layoutY="43.0" mnemonicParsing="false" onAction="#onActionDeleteCustomer" text="Delete Customer">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="110.0" prefHeight="205.0" prefWidth="850.0" spacing="15.0">
+               <children>
+                  <TableView fx:id="customerTblView" prefHeight="205.0" prefWidth="989.0">
+                    <columns>
+                      <TableColumn fx:id="customerIDCol" prefWidth="76.0" text="Customer ID" />
+                      <TableColumn fx:id="customerNameCol" prefWidth="113.0" text="Customer Name" />
+                        <TableColumn fx:id="addressCol" prefWidth="120.0" text="Address" />
+                        <TableColumn fx:id="zipCodeCol" prefWidth="100.0" text="Zip Code" />
+                        <TableColumn fx:id="phoneCol" prefWidth="128.0" text="Phone" />
+                        <TableColumn fx:id="createDateCol" prefWidth="123.0" text="Create Date" />
+                        <TableColumn fx:id="createdByCol" prefWidth="71.0" text="Created By" />
+                        <TableColumn fx:id="lastUpdateCol" prefWidth="90.0" text="Last Updated" />
+                        <TableColumn fx:id="lastUpdateByCol" prefWidth="101.0" text="Last Updated By" />
+                        <TableColumn fx:id="divisionIDCol" prefWidth="66.0" text="Division ID" />
+                    </columns>
+                     <HBox.margin>
+                        <Insets left="5.0" right="5.0" />
+                     </HBox.margin>
+                  </TableView>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="210.0" prefHeight="78.0" prefWidth="850.0" spacing="15.0">
+               <children>
+                  <Button fx:id="mainMenuButton" mnemonicParsing="false" onAction="#onActionMainMenu" text="Main Menu">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

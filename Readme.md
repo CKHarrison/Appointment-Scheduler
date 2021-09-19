@@ -15,6 +15,7 @@ schedule can also be generated, along with a user's schedule.
 
 This project is connected to a MySQL backend and is interfaced through the MySQL JDBC Connector Version 8.0.22
 
+[Link to Demo](https://youtu.be/Ofmvq6Nlkao)
 
 ## To run the program
 Click the run button and log in with the username: test password: test
@@ -22,3 +23,7 @@ The Javadoc information can be found in the Javadoc directory in the root folder
 the documentation.
 
 Please let me know if you have any questions or comments on this project. I had a great time working on it.
+
+## Database Information
+The database that was used for this poject was connected via Ucertify, it is possible that in the future the database will no longer
+be accessible, if that happens I will create a local database that can be used in conjuction  with this project.
